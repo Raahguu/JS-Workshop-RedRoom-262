@@ -16,7 +16,7 @@ function mine(amount = 1) {
     stoneDisplay.innerText = stone;
 }
 
-function buyWorker(name, price, mineAmount) { 
+function buyWorker(name, price, caller, mineAmount) { 
     if (stone < price) {
         displayError(`Not enough to buy ${name}`);
         return;
@@ -34,15 +34,15 @@ function buyWorker(name, price, mineAmount) {
 
 function buyMiner(caller) {
     let price = 10;
-    buyWorker("Miner", price, 1);
+    buyWorker("Miner", price, caller, 1);
 }
 
 function buyExcavator(caller) {
     let price = 1000;
-    buyWorker("Excavator", price, 100);
+    buyWorker("Excavator", price, caller, 100);
 }
 
 function buyExcavator(caller) {
     let price = 100000;
-    buyWorker("TNT", price, 10000);
+    buyWorker("TNT", price, caller, 10000);
 }
