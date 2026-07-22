@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="card">
+
+        <h1>Clicker Game</h1>
+        <div>
+            <p>This is a simple clicker game, where everytime you click the <span>Mine!</span> button,
+                you get a stone, and using those stone you can buy generators to automatically mine more stone for you
+            </p>
+        </div>
+
+        <p>Stone: <span id="stone">0</span></p>
+
+        <button id="manualButton">
+            Mine!
+        </button>
+
+        <div class="generators">
+            <div class="generator">
+                <button class="buy">Buy Miner</button>
+                <p>Price: <span class="price">10 Stone</span></p>
+                <p>Amount: <span class="amount">0</span></p>
+            </div>
+
+            <div class="generator">
+                <button class="buy">Buy Excavator</button>
+                <p>Price: <span class="price">1000 Stone</span></p>
+                <p>Amount: <span class="amount">0</span></p>
+            </div>
+
+            <div class="generator">
+                <button class="buy">Buy TNT</button>
+                <p>Price: <span class="price">100000 Stone</span></p>
+                <p>Amount: <span class="amount">0</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

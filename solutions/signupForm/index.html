@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <h1>Signup Form</h1>
+
+        <p class="description">
+            This form checks to make sure that all of the field within it are valid, before the form is submitted.
+            <ul>
+                <li>The name should be between 3 and 40 characters, and must have a space</li>
+                <li>The email must have an '@' and be from a '.com' or '.au' domain</li>
+                <li>The age must be a number of at least 18</li>
+                <li>If all the checks pass, the form says 'Sign Up successful'</li>
+                <li>Otherwise an approriate error message is displayed</li>
+            </ul>
+
+        </p>
+
+        <form>
+
+            <label for="name">Name</label>
+            <input
+                id="name"
+                placeholder="Enter your name"
+            >
+
+            <label for="email">Email</label>
+            <input
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <label for="age">Age</label>
+            <input
+                id="age"
+                placeholder="Enter your age"
+            >
+
+            <button type="button" id="submitButton" onclick="check()">
+                Sign Up
+            </button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

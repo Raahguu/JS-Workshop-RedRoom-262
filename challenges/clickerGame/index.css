@@ -1,0 +1,141 @@
+/* I totally didn't use AI for this CSS! */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Main card */
+.card {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Paragraphs */
+p {
+    color: #555;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+/* Highlighted text */
+span {
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+/* Stone counter */
+#stone {
+    font-size: 1.3rem;
+    color: #16a34a;
+}
+
+/* Main click button */
+#manualButton {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin: 25px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#manualButton:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+}
+
+#manualButton:active {
+    transform: scale(0.98);
+}
+
+/* Generator section */
+.generators {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual generator */
+.generator {
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 6px solid #4f46e5;
+}
+
+/* Buy buttons */
+.buy {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.buy:hover {
+    background: #15803d;
+}
+
+.buy:active {
+    transform: scale(0.96);
+}
+
+/* Price text */
+.price {
+    color: #dc2626;
+}
+
+/* Amount text */
+.amount {
+    color: #2563eb;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px;
+    }
+
+    #clickButton {
+        font-size: 1.2rem;
+    }
+
+    .Buy {
+        width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="card">
+
+        <h1>Random User</h1>
+        <div>
+            <p>This is a simple website which when 'Load User' is pressed, 
+                makes a request to <span class="label">https://randomuser.me/api/</span>
+                and parses the return data from it to show it to you</p>
+        </div>
+
+        <button id="loadButton">
+            Load User
+        </button>
+
+        <p id="status"></p>
+
+        <img
+            id="avatar"
+            src=""
+            alt="User profile picture"
+        >
+
+        <div class="info">
+            <p>
+                <span class="label">Name:</span>
+                <span id="name"></span>
+            </p>
+            <p>
+                <span class="label">Email:</span>
+                <span id="email"></span>
+            </p>
+            <p>
+                <span class="label">Country:</span>
+                <span id="country"></span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
