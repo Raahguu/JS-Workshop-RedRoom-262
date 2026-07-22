@@ -42,7 +42,7 @@ function buyExcavator(caller) {
     buyWorker("Excavator", price, caller, 100);
 }
 
-function buyExcavator(caller) {
+function buyTNT(caller) {
     let price = 100000;
     buyWorker("TNT", price, caller, 10000);
 }
